@@ -1,0 +1,86 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0061ff, #ffc003);
+  }
+  
+  .auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .form-wrapper {
+    width: 100%;
+  }
+  
+  .form {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form.active {
+    display: flex;
+  }
+  
+  .form h2 {
+    color: #0061ff;
+    margin-bottom: 1rem;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0061ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .form button:hover {
+    background-color: #004aad;
+  }
+  
+  .error {
+    color: #e63946;
+    font-size: 0.875rem;
+  }
+  
+  .toggle-text {
+    color: #0061ff;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .toggle-text:hover {
+    text-decoration: underline;
+  }
+  

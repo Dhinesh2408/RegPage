@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Register Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="form-wrapper">
+      <!-- Login Form -->
+      <form id="loginForm" class="form active" onsubmit="handleLogin(event)">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <p id="loginError" class="error"></p>
+        <button type="submit">Login</button>
+        <p class="toggle-text" onclick="toggleForms()">Don't have an account? Register</p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="registerForm" class="form" onsubmit="handleRegister(event)">
+        <h2>Register</h2>
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <p id="registerError" class="error"></p>
+        <button type="submit">Register</button>
+        <p class="toggle-text" onclick="toggleForms()">Already have an account? Login</p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
